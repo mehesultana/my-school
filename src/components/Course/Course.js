@@ -1,10 +1,14 @@
-import Button from '@restart/ui/esm/Button';
+import { useHistory } from 'react-router';
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
 const Course = (props) => {
 	console.log(props.course);
-	const { name, coursePhoto, time, fee } = props.course;
+	const { id, name, coursePhoto, time, fee } = props.course;
+	const history = useHistory();
+	const handleDetailsClick = () => {
+		history.push(`/course/${id}`);
+	};
 
 	return (
 		<Col>
@@ -16,7 +20,7 @@ const Course = (props) => {
 
 					<Card.Text>fee: ${fee} million </Card.Text>
 
-					<button type="button" class="btn btn-info">
+					<button onClick={handleDetailsClick} type="button" class="btn btn-info">
 						Details
 					</button>
 				</Card.Body>
