@@ -14,8 +14,8 @@ const CourseDetails = () => {
 	};
 	const [course, setCourse] = useState({});
 	useEffect(() => {
-		setCourse(fakeData);
-		console.log(fakeData[{}]);
+		setCourse(fakeData[0]);
+		console.log(fakeData[0]);
 	}, [id]);
 
 	const { name, coursePhoto, time, fee, details } = course;
