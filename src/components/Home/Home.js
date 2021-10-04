@@ -24,7 +24,7 @@ const Home = () => {
 								<h1 className="text-white">Learn a language for real life</h1>
 								<p className="text-white">Phrases useful in everyday life. Taught with video clips of real locals.</p>
 
-								<Link to={'../SignUP/SignUP.js'}>
+								<Link to="/signup">
 									<button type="button" className="btn btn-warning">
 										Get Started
 									</button>
@@ -43,34 +43,34 @@ const Home = () => {
 			<div>
 				<h1>Our Popular Courses</h1>
 				<br />
-				<CardGroup classNameName="courses-part">
+				<CardGroup className="courses-part">
 					<Card>
-						<Card.Img variant="top" src={img5} classNameName="h-10" />
+						<Card.Img variant="top" src={img5} className="h-10" />
 						<Card.Body>
 							<Card.Title>Arabic Through the Quran exercises</Card.Title>
 						</Card.Body>
 					</Card>
 					<Card>
-						<Card.Img variant="top" src={img6} classNameName="h-10" />
+						<Card.Img variant="top" src={img6} className="h-10" />
 						<Card.Body>
 							<Card.Title>Learn French online with My School</Card.Title>
 						</Card.Body>
 					</Card>
 					<Card>
-						<Card.Img variant="top" src={img7} classNameName="h-100" />
+						<Card.Img variant="top" src={img7} className="h-100" />
 						<Card.Body>
 							<Card.Title>Learn German online with My School</Card.Title>
 						</Card.Body>
 					</Card>
 					<Card>
-						<Card.Img variant="top" src={img8} classNameName="h-100" />
+						<Card.Img variant="top" src={img8} className="h-100" />
 						<Card.Body>
 							<Card.Title>Learn Russian online with My School</Card.Title>
 						</Card.Body>
 					</Card>
 				</CardGroup>
 				<br />
-				<Link to={'../Courses/Courses.js'}>
+				<Link to={'../Courses'}>
 					<button type="button" className="btn btn-warning">
 						Explore More <FontAwesomeIcon icon={faArrowAltCircleRight} />
 					</button>
@@ -79,25 +79,25 @@ const Home = () => {
 
 			{/* about my school */}
 
-			<div classNameName="middle-part">
+			<div className="middle-part">
 				<h1>Why My School?</h1>
 				<CardGroup>
 					<Card>
-						<Card.Img variant="top" src={img1} classNameName="card-img" />
+						<Card.Img variant="top" src={img1} className="card-img" />
 						<Card.Body>
 							<Card.Title>Proven memory techniques rooted in science</Card.Title>
 							<Card.Text>Learn more, faster, with a learning algorithm developed with the best cognitive science.</Card.Text>
 						</Card.Body>
 					</Card>
 					<Card>
-						<Card.Img variant="top" src={img2} classNameName="card-img" />
+						<Card.Img variant="top" src={img2} className="card-img" />
 						<Card.Body>
 							<Card.Title>Immersive learning. Learn like you live there.</Card.Title>
 							<Card.Text>Don’t waste time with phrases people don’t actually say. Learn the language people really use.</Card.Text>
 						</Card.Body>
 					</Card>
 					<Card>
-						<Card.Img variant="top" src={img3} classNameName="card-img" />
+						<Card.Img variant="top" src={img3} className="card-img" />
 						<Card.Body>
 							<Card.Title>Cover everything from holiday essentials to longer-term goals</Card.Title>
 							<Card.Text>Find the content topics to match what you need: from holiday small talk to meeting your partner’s family..</Card.Text>

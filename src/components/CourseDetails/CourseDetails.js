@@ -15,10 +15,10 @@ const CourseDetails = () => {
 	const [course, setCourse] = useState({});
 	useEffect(() => {
 		setCourse(fakeData[id]);
-		console.log(fakeData[id]);
+		// console.log(fakeData[id]);
 	}, [id]);
-
 	const { name, coursePhoto, time, fee, details } = course;
+
 	return (
 		<Container className="details">
 			<Card>

@@ -4,8 +4,8 @@ import './Course.css';
 import { Card, Col, Container } from 'react-bootstrap';
 
 const Course = (props) => {
-	console.log(props.course);
-	const { id, name, coursePhoto, time, fee } = props.course;
+	//console.log(props.course);
+	const { name, coursePhoto, time, fee, id } = props.course;
 	const history = useHistory();
 	const handleDetailsClick = () => {
 		history.push(`/course/${id}`);
@@ -20,7 +20,7 @@ const Course = (props) => {
 						<Card.Title>{name}</Card.Title>
 						<Card.Text>time: {time} </Card.Text>
 						<Card.Text>fee: ${fee} </Card.Text>
-						<button onClick={handleDetailsClick} type="button" class="btn btn-info">
+						<button onClick={handleDetailsClick} type="button" className="btn btn-info">
 							Details
 						</button>
 					</Card.Body>

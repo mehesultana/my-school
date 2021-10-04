@@ -11,7 +11,7 @@ const Courses = () => {
 	const [courses, setCourses] = useState([]);
 	useEffect(() => {
 		setCourses(fakeData);
-		console.log(fakeData);
+		// console.log(fakeData);
 	}, [courses]);
 
 	return (

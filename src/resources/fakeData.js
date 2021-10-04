@@ -1,6 +1,7 @@
 const CoursesData = [
 	{
 		id: 0,
+		languageName: 'French',
 		name: 'Learn French online with My School',
 		time: '2 months',
 		fee: 40,
@@ -9,6 +10,7 @@ const CoursesData = [
 	},
 	{
 		id: 1,
+		languageName: 'Arabic',
 		name: 'Arabic Through the Quran exercises',
 		time: '2 months',
 		fee: 20,
@@ -17,6 +19,7 @@ const CoursesData = [
 	},
 	{
 		id: 2,
+		languageName: 'Spanish-1',
 		name: 'Speak Real-Life Spanish',
 		time: '2 months',
 		fee: 43,
@@ -25,6 +28,7 @@ const CoursesData = [
 	},
 	{
 		id: 3,
+		languageName: 'Turkish',
 		name: 'Learn Turkish online with My School',
 		time: '2 months',
 		fee: 32,
@@ -34,6 +38,7 @@ const CoursesData = [
 	},
 	{
 		id: 4,
+		languageName: 'Russian-1',
 		name: 'Learn Russian online with My School',
 		time: '2 months',
 		fee: 64,
@@ -43,6 +48,7 @@ const CoursesData = [
 	},
 	{
 		id: 5,
+		languageName: 'German',
 		name: 'Learn German online with My School',
 		time: '2 months',
 		fee: 27,
@@ -52,6 +58,7 @@ const CoursesData = [
 	},
 	{
 		id: 6,
+		languageName: 'Italian',
 		name: 'Learn Italian online with My School',
 		time: '2 months',
 		fee: 29,
@@ -61,6 +68,7 @@ const CoursesData = [
 	},
 	{
 		id: 7,
+		languageName: 'Japanese',
 		name: 'Learn Japanese online with My School',
 		time: '2 months',
 		fee: 64,
@@ -70,6 +78,7 @@ const CoursesData = [
 	},
 	{
 		id: 8,
+		languageName: 'Portuguese',
 		name: 'Learn Portuguese online with My School',
 		time: '2 months',
 		fee: 42,
@@ -79,6 +88,7 @@ const CoursesData = [
 	},
 	{
 		id: 9,
+		languageName: 'Russian',
 		name: 'Learn Russian online with My School',
 		time: '2 months',
 		fee: 33,
@@ -88,6 +98,7 @@ const CoursesData = [
 	},
 	{
 		id: 10,
+		languageName: 'Spanish',
 		name: 'Learn Spanish online with My school',
 		time: '2 months',
 		fee: 42,
@@ -97,6 +108,7 @@ const CoursesData = [
 	},
 	{
 		id: 11,
+		languageName: 'Modern-Greek',
 		name: 'Learn Modern Greek online with My School',
 		time: '2 months',
 		fee: 35,
