@@ -1,11 +1,11 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap';
+import { Container, Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
 	return (
-		<div className="header">
+		<Container className="header">
 			<h1 to="/home">My School</h1>
 			<Nav className="navbar">
 				<NavLink to="/home">Home</NavLink>
@@ -14,7 +14,7 @@ const Header = () => {
 				<NavLink to="/contact">Contact Us</NavLink>
 				<NavLink to="/signup">Sign Up</NavLink>
 			</Nav>
-		</div>
+		</Container>
 	);
 };
 
