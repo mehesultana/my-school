@@ -1,10 +1,10 @@
 import React from 'react';
-import { FormControl, InputGroup } from 'react-bootstrap';
+import { Container, FormControl, InputGroup } from 'react-bootstrap';
 import './ContactUs.css';
 
 const ContactUs = () => {
 	return (
-		<div className="contact">
+		<Container className="contact">
 			<form>
 				<h1>Need Our Help ?</h1>
 
@@ -37,7 +37,7 @@ const ContactUs = () => {
 					</div>
 				</div>
 			</form>
-		</div>
+		</Container>
 	);
 };
 
