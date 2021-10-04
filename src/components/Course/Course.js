@@ -19,7 +19,7 @@ const Course = (props) => {
 					<Card.Body>
 						<Card.Title>{name}</Card.Title>
 						<Card.Text>time: {time} </Card.Text>
-						<Card.Text>fee: ${fee} million </Card.Text>
+						<Card.Text>fee: ${fee} </Card.Text>
 						<button onClick={handleDetailsClick} type="button" class="btn btn-info">
 							Details
 						</button>
