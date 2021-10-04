@@ -70,7 +70,7 @@ const Home = () => {
 					</Card>
 				</CardGroup>
 				<br />
-				<Link to={'../Courses'}>
+				<Link to="/courses">
 					<button type="button" className="btn btn-warning">
 						Explore More <FontAwesomeIcon icon={faArrowAltCircleRight} />
 					</button>
