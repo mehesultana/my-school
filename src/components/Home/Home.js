@@ -10,6 +10,7 @@ import img7 from '../../images/course3.png';
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 	return (
@@ -22,9 +23,11 @@ const Home = () => {
 								<h1 class="text-white">Learn a language for real life</h1>
 								<p class="text-white">Phrases useful in everyday life. Taught with video clips of real locals.</p>
 
-								<button type="button" class="btn btn-warning">
-									Get Started
-								</button>
+								<Link to={'../SignUP/SignUP.js'}>
+									<button type="button" class="btn btn-warning">
+										Get Started
+									</button>
+								</Link>
 							</div>
 							<div class="col-md-6 align-items-center order-2 order-md-2">
 								<img src={img4} class="d-block w-50" alt="..." />
@@ -53,16 +56,18 @@ const Home = () => {
 						</Card.Body>
 					</Card>
 					<Card>
-						<Card.Img variant="top" src={img7} className="h-20" />
+						<Card.Img variant="top" src={img7} className="h-100" />
 						<Card.Body>
 							<Card.Title>Learn German online with My School</Card.Title>
 						</Card.Body>
 					</Card>
 				</CardGroup>
 				<br />
-				<button type="button" class="btn btn-warning">
-					Explore More <FontAwesomeIcon icon={faArrowAltCircleRight} />
-				</button>
+				<Link to={'../Courses/Courses.js'}>
+					<button type="button" class="btn btn-warning">
+						Explore More <FontAwesomeIcon icon={faArrowAltCircleRight} />
+					</button>
+				</Link>
 			</div>
 
 			{/* about my school */}

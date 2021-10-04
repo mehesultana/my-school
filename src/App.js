@@ -6,6 +6,9 @@ import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
 import Courses from './components/Courses/Courses';
 import CourseDetails from './components/CourseDetails/CourseDetails';
+import Blog from './components/Blog/Blog';
+import ContactUs from './components/ContactUs/ContactUs';
+import SignUP from './components/SignUP/SignUP';
 
 function App() {
 	return (
@@ -24,6 +27,15 @@ function App() {
 					</Route>
 					<Route path="/course/:id">
 						<CourseDetails></CourseDetails>
+					</Route>
+					<Route path="/blog">
+						<Blog></Blog>
+					</Route>
+					<Route path="/contact">
+						<ContactUs></ContactUs>
+					</Route>
+					<Route path="/signup">
+						<SignUP></SignUP>
 					</Route>
 
 					<Route path="*">

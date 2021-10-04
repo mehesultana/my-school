@@ -1,6 +1,7 @@
 import { useHistory } from 'react-router';
 import React from 'react';
-import { Card, Col } from 'react-bootstrap';
+import './Course.css';
+import { Card, Col, Container } from 'react-bootstrap';
 
 const Course = (props) => {
 	console.log(props.course);
@@ -11,21 +12,23 @@ const Course = (props) => {
 	};
 
 	return (
-		<Col>
-			<Card>
-				<Card.Img variant="top" src={coursePhoto} />
-				<Card.Body>
-					<Card.Title>{name}</Card.Title>
-					<Card.Text>time: {time} </Card.Text>
+		<Container className="course-container">
+			<Col>
+				<Card className="course">
+					<Card.Img variant="top" src={coursePhoto} />
+					<Card.Body>
+						<Card.Title>{name}</Card.Title>
+						<Card.Text>time: {time} </Card.Text>
 
-					<Card.Text>fee: ${fee} million </Card.Text>
+						<Card.Text>fee: ${fee} million </Card.Text>
 
-					<button onClick={handleDetailsClick} type="button" class="btn btn-info">
-						Details
-					</button>
-				</Card.Body>
-			</Card>
-		</Col>
+						<button onClick={handleDetailsClick} type="button" class="btn btn-info">
+							Details
+						</button>
+					</Card.Body>
+				</Card>
+			</Col>
+		</Container>
 	);
 };
 

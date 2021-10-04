@@ -1,0 +1,18 @@
+.blog-part {
+	margin-top: 70px;
+	background-color: beige;
+}
+h1 {
+	color: goldenrod;
+}
+h2 {
+	color: #fcfbf8;
+	background-color: rgb(252, 185, 0);
+}
+.blog:hover {
+	border-radius: 10x;
+	box-shadow: 5px 5px 10px gray;
+	background-color: #eedf9a;
+	border: 5px solid #eeca00;
+	cursor: pointer;
+}
