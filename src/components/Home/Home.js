@@ -1,19 +1,22 @@
-import React from 'react';
-import { Card, CardGroup, Container } from 'react-bootstrap';
+import React, { Fragment, useEffect, useState } from 'react';
+import { Card, CardGroup, Container, Row } from 'react-bootstrap';
 import img1 from '../../images/photo1.svg';
 import img2 from '../../images/photo2.svg';
 import img3 from '../../images/photo3.svg';
 import img4 from '../../images/home2.png';
-import img5 from '../../images/course.png';
-import img6 from '../../images/course2.png';
-import img7 from '../../images/course3.png';
-import img8 from '../../images/course4.png';
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import Course from '../Course/Course';
+import fakeData from '../../resources/fakeData';
 
 const Home = () => {
+	const [courses, setCourses] = useState([]);
+	useEffect(() => {
+		setCourses(fakeData);
+		// console.log(fakeData);
+	}, [courses]);
 	return (
 		<Container>
 			<div id="carouselExampleSlidesOnly" className="carousel slide bg-success intro-part" data-ride="carousel ">
@@ -39,43 +42,28 @@ const Home = () => {
 			</div>
 
 			{/* courses  */}
+			<Container>
+				<div className="courses-part">
+					<h1>Our Popular Courses</h1>
 
-			<div>
-				<h1>Our Popular Courses</h1>
-				<br />
-				<CardGroup className="courses-part">
-					<Card>
-						<Card.Img variant="top" src={img5} className="h-10" />
-						<Card.Body>
-							<Card.Title>Arabic Through the Quran exercises</Card.Title>
-						</Card.Body>
-					</Card>
-					<Card>
-						<Card.Img variant="top" src={img6} className="h-10" />
-						<Card.Body>
-							<Card.Title>Learn French online with My School</Card.Title>
-						</Card.Body>
-					</Card>
-					<Card>
-						<Card.Img variant="top" src={img7} className="h-100" />
-						<Card.Body>
-							<Card.Title>Learn German online with My School</Card.Title>
-						</Card.Body>
-					</Card>
-					<Card>
-						<Card.Img variant="top" src={img8} className="h-100" />
-						<Card.Body>
-							<Card.Title>Learn Russian online with My School</Card.Title>
-						</Card.Body>
-					</Card>
-				</CardGroup>
+					<Row xs={1} md={3} className="g-4 ">
+						{courses.slice(0, 6).map((cs) => {
+							const { id } = cs;
+							return (
+								<Fragment key={id}>
+									<Course course={cs}></Course>
+								</Fragment>
+							);
+						})}
+					</Row>
+				</div>
 				<br />
 				<Link to="/courses">
 					<button type="button" className="btn btn-warning">
 						Explore More <FontAwesomeIcon icon={faArrowAltCircleRight} />
 					</button>
 				</Link>
-			</div>
+			</Container>
 
 			{/* about my school */}
 

@@ -48,7 +48,7 @@ const SignUP = () => {
 				</div>
 			</form>
 
-			<Link className="dropdown-item" href="#">
+			<Link className="dropdown-item" to="#">
 				Have an account? Log in
 			</Link>
 			<Link className="dropdown-item" to="#">
