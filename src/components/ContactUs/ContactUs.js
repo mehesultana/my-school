@@ -1,9 +1,10 @@
 import React from 'react';
 import { FormControl, InputGroup } from 'react-bootstrap';
+import './ContactUs.css';
 
 const ContactUs = () => {
 	return (
-		<div>
+		<div className="contact">
 			<form>
 				<h1>Need Our Help ?</h1>
 
