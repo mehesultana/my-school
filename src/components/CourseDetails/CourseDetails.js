@@ -14,8 +14,8 @@ const CourseDetails = () => {
 	};
 	const [course, setCourse] = useState({});
 	useEffect(() => {
-		setCourse(fakeData[0]);
-		console.log(fakeData[0]);
+		setCourse(fakeData[id]);
+		console.log(fakeData[id]);
 	}, [id]);
 
 	const { name, coursePhoto, time, fee, details } = course;
@@ -24,10 +24,10 @@ const CourseDetails = () => {
 			<Card>
 				<Card.Img variant="top" className="details-img" src={coursePhoto} />
 				<Card.Body>
-					<h1>Name: {name}</h1>
+					<h1>{name}</h1>
 					<Card.Text>Course Duration: {time}</Card.Text>
 					<p>Course Fee : ${fee}</p>
-					<p>Details : {details}</p>
+					<p>{details}</p>
 				</Card.Body>
 				<Button className="mb-4" variant="warning" onClick={backHome}>
 					Add To Cart

@@ -42,14 +42,14 @@ const SignUP = () => {
 				<div class="form-group row">
 					<div class="col-sm-10">
 						<button type="submit" class="btn btn-primary">
-							Log In
+							Sign Up
 						</button>
 					</div>
 				</div>
 			</form>
 
 			<Link className="dropdown-item" href="#">
-				New around here? Sign up
+				Have an account? Log in
 			</Link>
 			<Link className="dropdown-item" to="#">
 				Forgot password?
