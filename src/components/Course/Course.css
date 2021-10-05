@@ -1,7 +1,7 @@
 .course:hover {
 	border-radius: 10x;
 	box-shadow: 5px 5px 10px gray;
-	background-color: #d6d2c1;
-	border: 5px solid #2c2b23;
+	background-color: #dfecd9;
+	border: 5px solid #7c7c7a;
 	cursor: pointer;
 }
