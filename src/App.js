@@ -9,6 +9,7 @@ import CourseDetails from './components/CourseDetails/CourseDetails';
 import Blog from './components/Blog/Blog';
 import ContactUs from './components/ContactUs/ContactUs';
 import SignUP from './components/SignUP/SignUP';
+import AboutUs from './components/AboutUs/AboutUs';
 
 function App() {
 	return (
@@ -36,6 +37,9 @@ function App() {
 					</Route>
 					<Route path="/signup">
 						<SignUP></SignUP>
+					</Route>
+					<Route path="/about">
+						<AboutUs></AboutUs>
 					</Route>
 
 					<Route path="*">
