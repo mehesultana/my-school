@@ -19,7 +19,7 @@ const Home = () => {
 	}, [courses]);
 	return (
 		<Container>
-			<div id="carouselExampleSlidesOnly" className="carousel slide bg-success intro-part" data-ride="carousel ">
+			<div id="carouselExampleSlidesOnly" className="carousel slide bg-success bg-opacity-75 intro-part" data-ride="carousel ">
 				<div className="carousel-inner">
 					<div className="carousel-item active">
 						<div className="row align-items-center">
@@ -39,6 +39,30 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
+			</div>
+
+			<div className="advantage">
+				<h4>Course Advantage</h4>
+				<CardGroup>
+					<Card>
+						<Card.Body>
+							<Card.Title>Live Video Class</Card.Title>
+							<Card.Text>Students will be able to take part in classes directly.</Card.Text>
+						</Card.Body>
+					</Card>
+					<Card>
+						<Card.Body>
+							<Card.Title>Recorded Class</Card.Title>
+							<Card.Text>We will provide recorded videos.</Card.Text>
+						</Card.Body>
+					</Card>
+					<Card>
+						<Card.Body>
+							<Card.Title>Group Study</Card.Title>
+							<Card.Text>Students will connect with others and with the world around them.</Card.Text>
+						</Card.Body>
+					</Card>
+				</CardGroup>
 			</div>
 
 			{/* courses  */}
